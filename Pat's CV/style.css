@@ -1,16 +1,20 @@
-
-section,header{
-  background-color: white;
+*{
+  color:rgb(255, 255, 255);
+  font-family: Segoe UI;
+}
+.page{
+  background: linear-gradient(to bottom, #57416F, #2D124B);
   margin: 0 auto;
   padding: 5px 30px 10px 30px;
   width: 960px;
 }
+
 .head{
   justify-content: space-between;
   align-items: center;
   display:flex;
   margin-top: 20px;
-  background-image: linear-gradient(to bottom right, #D2DAFF, #EEF1FF);
+  background-image: linear-gradient(to bottom right, #C21FDB, #7209B7);
   padding: 1px;
   border-radius: 10px;
 }
@@ -24,7 +28,7 @@ section,header{
   margin: 0 10px;
   height: 20px;
   width: 20px;
-  background-color: #B1B2FF;
+  background-color: #3A0CA3;
   padding: 6px;
   vertical-align: middle;
   border-radius: 50%;
@@ -38,6 +42,7 @@ section,header{
 }
 
 .pies{
+  margin-left: 20px;
   border-radius: 15%;
   padding: 5px;
   width: 150px;
@@ -47,14 +52,33 @@ section,header{
 #span{
   font-size: 18px;
   color: white;
-  background-color: magenta;
+  background-color: #F72585;
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
 }
+#what{
+  display:inline-block;
+  width: 100px;
+  
+}
+
+
+.dot{
+  margin-top: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background:#57416F;
+  border-radius: 50%;
+}
+.fill {
+  background: #F72585;
+}
+
 
 body{
   margin-top: 30px;
-  background-color: #EEF1FF;
+  background-color: #2D124B;
 
 }

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i, 600, 600,700");
+body,
+html {
+  padding: 0;
+  background: #0d1821;
+  margin: 0;
+  color: #f0f4ef;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  opacity: 0;
+}
+
+div {
+  margin: 0.8rem auto;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+div#container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: fit-content;
+  padding: 3rem 4rem;
+  filter: grayscale(100%);
+  margin: auto;
+  transition-duration: 0.5s;
+}
+div#container:hover {
+  color: #f0f4ef;
+  box-shadow: 0 0 5px #f0f4ef;
+  cursor: pointer;
+  filter: grayscale(0%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+div.skill-bar {
+  margin: 1rem 0 0 0;
+  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.skill-level {
+  margin: 0.2rem 0;
+  flex-direction: row;
+}
+div.dot {
+  opacity: 0;
+  margin: 0.2rem 0.2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 0.1rem #ff9e00 solid;
+}
+div.fill {
+  background: white;
+}
+div .l1 {
+  background: #ff6d00;
+  border: 0.1rem #ff6d00 solid;
+}
+div .l2 {
+  background: #ff7900;
+  border: 0.1rem #ff7900 solid;
+}
+div .l3 {
+  background: #ff8500;
+  border: 0.1rem #ff8500 solid;
+}
+div .l4 {
+  background: #ff9100;
+  border: 0.1rem #ff9100 solid;
+}
+div .l5 {
+  background: #ff9e00;
+  border: 0.1rem #ff9e00 solid;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
