@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: indigo;
     display: flex;
@@ -5,9 +8,80 @@ body{
     height: 100vh;
     margin: 0px;
     overflow: hidden;
+    
 }
-.navBar{
+a:hover{
+    color: yellow;
+}
+a{
+    
+    text-decoration: none;
+    color: red;
+}
+nav{
     display: flex;
     width:100%;
-    height: 200px;
+    /* justify-content: space-around; */
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+nav > .section{
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid blue;
+}
+#logo,
+#link {
+    flex-basis: calc(100% / 3);
+}
+#social,
+#contact{
+    flex-basis: calc(100% / 6);
+}
+
+nav .fab{
+    
+    display: flex;
+    color: red;
+    
+}
+#logo{
+    justify-content: flex-start;
+    color: lightgrey;
+    border-left: none;
+    font-size: 2.5rem;
+}
+#link{
+    gap: 6rem;
+}
+#social{
+    gap: 3rem;
+}
+#one{
+    color: white;
+    
+}
+#one:hover{
+    color:yellow;
+}
+i:hover{
+    color: yellow;
+}
+
+/* Main section below */
+
+main {
+    flex-grow: 1;
+}
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+}
+.article-section {
+    height: 100%;
+    border: 1px solid white;
 }
