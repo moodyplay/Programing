@@ -18,6 +18,11 @@ a{
     text-decoration: none;
     color: red;
 }
+h1, h2, h3, a, p, span {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+}
 nav{
     display: flex;
     width:100%;
@@ -28,10 +33,10 @@ nav{
 nav > .section{
     padding: 3rem 2rem;
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid blue;
+    border-left: 1px solid blue;
 }
 #logo,
 #link {
@@ -39,7 +44,7 @@ nav > .section{
 }
 #social,
 #contact{
-    flex-basis: calc(100% / 6);
+    flex-grow: 1;
 }
 
 nav .fab{
@@ -80,8 +85,16 @@ main > article {
     display: grid;
     height: 100%;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 .article-section {
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+.description, .nav{
+    border-left: 1px solid white;
+}
+.image, .description{
+    border-bottom: 1px solid white;
 }
