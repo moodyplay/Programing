@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: indigo;
+    background-color: rgb(35, 0, 59);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -11,7 +11,7 @@ body{
     
 }
 a:hover{
-    color: yellow;
+    color: blueviolet;
 }
 a{
     
@@ -26,9 +26,8 @@ h1, h2, h3, a, p, span {
 nav{
     display: flex;
     width:100%;
-    /* justify-content: space-around; */
     font-size: 25px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(80, 0, 133);
 }
 nav > .section{
     padding: 3rem 2rem;
@@ -36,7 +35,7 @@ nav > .section{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid blue;
+    border-left: 1px solid rgb(80, 0, 133);
 }
 #logo,
 #link {
@@ -70,10 +69,10 @@ nav .fab{
     
 }
 #one:hover{
-    color:yellow;
+    color:blueviolet;
 }
 i:hover{
-    color: yellow;
+    color:blueviolet;
 }
 
 /* Main section below */
@@ -93,8 +92,68 @@ main > article {
 }
 
 .description, .nav{
-    border-left: 1px solid white;
+    border-left: 1px solid rgb(80, 0, 133);
 }
 .image, .description{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(80, 0, 133);
+}
+
+.image{
+    background-image: url("img/frequency-wave.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.description{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.pixa {
+    color:rgb(220, 168, 255);
+    text-decoration: underline;
+}
+.pixa:hover {
+    color: hotpink;
+}
+.title{ 
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.title > p{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.title > p:hover{
+    color: blueviolet;
+}
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav-button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    color: white;
+    background-color: transparent;
+    /* background-color: hotpink; */
+    
+    font-size: 5rem;
+}
+.left-button{
+    border-right: 1px solid rgb(80, 0, 133);
+}
+.nav-button:hover{
+    color:blueviolet;
+    font-size: 6rem;
+    background-color:rgb(44, 0, 74);;
 }
