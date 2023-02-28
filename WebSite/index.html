@@ -52,10 +52,10 @@
                 </p>
             </div>
             <div class="nav article-section">
-                <button class="nav-button left-button" type="button" onclick="LeftClick()">
+                <button class="nav-button left-button" type="button" onclick="LeftClickShake()">
                     <i class="fa-solid fa-caret-left"></i>
                 </button>
-                <button class="nav-button" type="button" onclick="RightClick()">
+                <button class="nav-button right-button" type="button" onclick="RightClick()">
                     <i class="fa-solid fa-caret-right"></i>
                 </button>
             </div>
@@ -77,14 +77,34 @@
                 <button class="nav-button left-button" type="button" onclick="LeftClick()">
                     <i class="fa-solid fa-caret-left"></i>
                 </button>
-                <button class="nav-button" type="button" onclick="RightClick()">
+                <button class="nav-button right-button" type="button" onclick="RightClick()">
                     <i class="fa-solid fa-caret-right"></i>
                 </button>
             </div>
         </article>
-        <article></article>
-        <article></article>
+        <article data-index="2" data-status="inactive">
+            <div class="image article-section"></div>
+            <div class="description article-section">
+                <p>
+                    no fajny trzeci <i class="fa-regular fa-hand-point-right"></i>
+                    <a href="https://pixabay.com/illustrations/frequency-wave-geometry-pattern-7776034/" class="pixa">pixabay.com</a>
+                </p>
+            </div>
+            <div class="title article-section">
+                <p>
+                    trzeci
+                </p>
+            </div>
+            <div class="nav article-section">
+                <button class="nav-button left-button" type="button" onclick="LeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="nav-button right-button-end" type="button">
+                    <i class="fa-solid fa-caret-right rightShake"></i>
+                </button>
+            </div>
+        </article>
     </main>
-  
+  <script src="script.js"></script>
 </body>
 </html>

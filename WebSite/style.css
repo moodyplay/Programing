@@ -86,14 +86,42 @@ main {
 main > article {
     display: grid;
     height: 100%;
+    width:100%;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     position: absolute;
     left: 0px;
     top: 0px;
+    transition: transform 600ms ease;
 }
+
 main > article[data-status="inactive"]{
+    transform: translateX(100%);
+}
+main > article[data-status="after"]{
     transform: translateX(-100%);
+}
+main > article[data-status="afterLeft"]{
+    transform: translateX(100%);
+}
+
+.right-button-end:active{
+    animation: animate 0.3s;
+    
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-5%);
+    }
+    25%{
+        transform: translateX(10%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    75%{
+        transform: translateX(5%);
+    }
 }
 .article-section {
     height: 100%;
@@ -164,5 +192,5 @@ main > article[data-status="inactive"]{
 .nav-button:hover{
     color:blueviolet;
     font-size: 6rem;
-    background-color:rgb(44, 0, 74);;
+    /* background-color:rgb(44, 0, 74); */
 }
