@@ -97,6 +97,7 @@ main > article {
 
 main > article[data-status="inactive"]{
     transform: translateX(100%);
+    
 }
 main > article[data-status="after"]{
     transform: translateX(-100%);
