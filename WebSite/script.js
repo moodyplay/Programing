@@ -1,5 +1,6 @@
 let activeIndex = 0;
 
+
 const articles = document.getElementsByTagName("article");
 
 const RightClick = () => {
@@ -34,5 +35,22 @@ const LeftClick = () => {
     activeIndex = nextIndex;
     
     
-    }
+ }
+
+ const buttonShake = () => {
+    var pushed = document.getElementById("Btn");
+    pushed.classList.add("shake");
+    var delay = setTimeout(function(){
+        pushed.classList.remove("shake");
+    }, 300)
+}
+const rightButtonShake = () => {
+    var pushed = document.getElementById("EBtn");
+    pushed.classList.add("shake");
+    var delay = setTimeout(function(){
+        pushed.classList.remove("shake");
+    }, 300)
+}
+
+
 
