@@ -158,9 +158,11 @@ margin-bottom: 3px;
   border-radius: 10px;
   font-weight: bold;
 }
-#button{
+.download-link{
+  border: 2px outset white;
+  text-decoration: none;
   margin-top: 5px;
-  display:block;
+  display: inline-block;
   font-size: 18px;
   color: white;
   background-color: #F72585;
